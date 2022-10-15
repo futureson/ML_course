@@ -9,6 +9,8 @@ def build_poly(x, degree):
     # ***************************************************
     # INSERT YOUR CODE HERE
     # polynomial basis function: TODO
+    poly = x.reshape(len(x),-1)**np.arange(0,degree+1)
+    return poly
     # this function should return the matrix formed
     # by applying the polynomial basis to the input data
     # ***************************************************
